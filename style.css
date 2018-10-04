@@ -7,3 +7,17 @@
     text-align: center;
     color: gray;
 }
+
+#empty {
+    margin-top: 40px;
+}
+
+#trainCard {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#append {
+    border-bottom: 5px;
+    border-color: black;
+}
