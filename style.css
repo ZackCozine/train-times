@@ -18,6 +18,13 @@
 }
 
 #append {
-    border-bottom: 5px;
+    border-style: solid;
+    border-left: 5px;
+    border-top: 5px;
+    border-right: 5px;
     border-color: black;
+}
+
+#trainCard {
+    margin-bottom: 15px;
 }

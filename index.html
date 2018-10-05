@@ -169,8 +169,20 @@
                 frequency: frequency,
                 dateAdded: firebase.database.ServerValue.TIMESTAMP
             });
+            
+            // var currentTime = moment();
 
-        });
+            // var firstTime = trainTime;
+
+            // var diffTime = moment().diff(moment(currentTime), "minutes");
+
+            // var tRemainder = diffTime % frequency;
+
+            // var minutesTillTrain = frequency - tRemainder;
+
+            // var nextTrain = moment().add(minutesTillTrain, "minutes");
+            
+            });
 
         database.ref().on("child_added", function (snapshot) {
             var sv = snapshot.val();
@@ -181,10 +193,10 @@
             console.log(sv.frequency);
 
             $("#train-append").append("<p id='append'>" + sv.trainName + "</p>");
-            $("#destination-append").append("<p id='append'>" + sv.destination + "</p>")
+            $("#destination-append").append("<p id='append'>" + sv.destination + "</p>");
             $("#frequency-append").append("<p id='append'>" + sv.frequency + "</p>");
-            $("#arrival-append").append()
-            $("#minutesAway-append").append()
+            // $("#arrival-append").append("<p id='append'" > + estimated arrival + "</p>");
+            // $("#minutesAway-append").append("<p id='append'" + minutes away + "</p>");
         });
 
 
